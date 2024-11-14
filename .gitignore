@@ -1,0 +1,5 @@
+/bin
+.DB_STORE
+/.idea
+/.vscode
+/.env
