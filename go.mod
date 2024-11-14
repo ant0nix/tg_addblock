@@ -1,3 +1,3 @@
 module github.com/ant0nix/vpn.git
 
-go 1.21.6
+go 1.23.3
