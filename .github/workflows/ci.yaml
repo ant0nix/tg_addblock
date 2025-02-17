@@ -16,6 +16,9 @@ jobs:
         with:
           go-version: '1.23'
 
+      - name: Clean up previous builds
+        run: rm -rf cmd/*
+
       - name: Build
         run: go build -v ./...
 
