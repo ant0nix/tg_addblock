@@ -1,2 +1,2 @@
-# vpn
-Virtual Private Network with own protocol
+# tg addblock
+Telegram addblock with AI for groups
