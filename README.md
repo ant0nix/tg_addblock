@@ -1,2 +1,2 @@
 # tg addblock
-Telegram addblock with AI for groups
+Telegram addblock with AI for groups.
