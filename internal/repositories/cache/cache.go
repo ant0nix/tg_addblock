@@ -2,7 +2,6 @@ package cacheclient
 
 import (
 	"fmt"
-	"github.com/pkg/errors"
 	"time"
 )
 
@@ -19,6 +18,7 @@ func (c *Cache) Add(key int64, value any) {
 			removeFunc: func(ticker *time.Ticker) {
 				select {
 				case <-ticker.C:
+					// в будущем будет проверяь отработал ли воркер
 					delete(c.Items, key)
 				}
 			},
@@ -32,14 +32,6 @@ func (c *Cache) Add(key int64, value any) {
 	ci.value = append(ci.value, value)
 	ci.index++
 	c.Items[key] = ci
-}
-
-func (c *Cache) Get(key int64) ([]any, error) {
-	if ci, ok := c.Items[key]; ok {
-		ci.ticker.Reset(1 * time.Minute)
-		return ci.value, nil
-	}
-	return nil, errors.New("item not found")
 }
 
 func (c *Cache) GetKeys() string {

@@ -1,8 +1,8 @@
-package bootstrap
+package mongodb
 
 import (
 	"context"
-	"github.com/ant0nix/vpn.git/internal/config"
+	"github.com/ant0nix/tg_addblock/internal/config"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/v2/event"

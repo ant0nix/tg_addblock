@@ -16,6 +16,8 @@ type Config struct {
 	MongoDBURI   string        `env:"MONGODB_URI" envDefault:""`
 	Timeout      time.Duration `env:"TIMEOUT" envDefault:"60s"`
 	PingInterval time.Duration `env:"PING_INTERVAL" envDefault:"5s"`
+	//Redis
+	RedisHost string `env:"REDIS_HOST" envDefault:""`
 }
 
 func Read() (*Config, error) {

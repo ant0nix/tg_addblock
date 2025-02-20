@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"github.com/ant0nix/vpn.git/internal/app"
-	"github.com/ant0nix/vpn.git/internal/config"
+	"github.com/ant0nix/tg_addblock/internal/app"
+	"github.com/ant0nix/tg_addblock/internal/config"
 	"github.com/sirupsen/logrus"
 	"log"
 )

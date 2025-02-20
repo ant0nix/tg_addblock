@@ -1,9 +1,9 @@
-package bootstrap
+package telegram
 
 import (
 	"github.com/PaulSonOfLars/gotgbot/v2"
 	"github.com/PaulSonOfLars/gotgbot/v2/ext"
-	"github.com/ant0nix/vpn.git/internal/config"
+	"github.com/ant0nix/tg_addblock/internal/config"
 	"github.com/sirupsen/logrus"
 )
 
